@@ -4,9 +4,9 @@
   <%= render @post %>
 
   <div>
-    <%= link_to "Edit this post", edit_post_path(@post) %> |
-    <%= link_to "Back to posts", posts_path %>
+    <%= link_to "Edit this post", edit_post_path(@post), class: "btn btn-warning btn-sm" %>
+    <%= link_to "Back to posts", posts_path, class: "btn btn-primary btn-sm" %>
 
-    <%= button_to "Destroy this post", @post, method: :delete %>
-  </div>
+    <%= button_to "Destroy this post", @post, method: :delete, class: "btn btn-danger btn-sm" %>
+  </div> 
 </div>
