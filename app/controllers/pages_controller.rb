@@ -1,7 +1,5 @@
 class PagesController < ApplicationController
-  def submission
+  def home
   end
 
-  def gallery
-  end
 end

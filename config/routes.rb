@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   resources :posts
   # Defines the root path route ("/")
-  root "pages#submission"
+  root "pages#home"
 
-  get 'gallery', to: 'pages#gallery'
+  get 'gallery', to: 'posts#index'
+  get 'submission', to: 'posts#new'
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
